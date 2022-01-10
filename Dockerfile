@@ -26,6 +26,11 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 # RUN code-server --install-extension esbenp.prettier-vscode
 
+RUN sudo apt update
+RUN sudo apt install software-properties-common
+RUN sudo add-apt-repository ppa:deadsnakes/ppa
+RUN sudo apt install python3.9
+
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
