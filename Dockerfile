@@ -30,7 +30,7 @@ RUN sudo apt update -y
 RUN sudo apt install software-properties-common -y
 RUN sudo add-apt-repository ppa:deadsnakes/ppa -y
 RUN sudo apt install python3.9 -y
-
+RUN sudo apt install python3-pip -y
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
